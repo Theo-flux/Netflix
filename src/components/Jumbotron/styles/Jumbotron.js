@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
 
-export const Container = styled.section`
-    background-color: black;
-`
-
 export const Item = styled.div`
     display: flex;
     border-bottom: 10px solid #222;
@@ -36,6 +32,7 @@ export const Title = styled.h1`
     margin-bottom: .5em; 
     line-height: 1.1;
 
+
     @media (min-width: 600px){
         font-size: 2.5rem;
         text-align: left;
@@ -47,7 +44,6 @@ export const SubTitle = styled.p`
     text-align: center;
     line-height: normal;
     margin: 0 auto;
-    width: 90%;
     
     // border: 1px solid magenta;
 
@@ -65,9 +61,22 @@ export const Image = styled.img`
 
 export const Pane = styled.div`
     width: 90%;
-    // border: 1px solid yellow;
+    padding: 0 3em;
 
     @media (min-width: 600px){
         width: 45%;
+        padding: 0;
+    }
+`
+
+export const Container = styled.section`
+    background-color: black;
+
+    @media (max-width: 600px){
+        ${Inner}:last-of-type p{
+            margin-bottom: 2em;
+            
+        }
+
     }
 `

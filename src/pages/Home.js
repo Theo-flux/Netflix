@@ -1,8 +1,14 @@
-import JumbotronContainer from "../containers/Jumbotron"
+import JumbotronContainer from "../containers/JumbotronContainer"
+import FooterContainer from "../containers/FooterContainer"
+import AccordionContainer from "../containers/AccordionContainer"
 
 function Home(){
     return(
-        <JumbotronContainer/>
+        <>
+            <JumbotronContainer/>
+            <AccordionContainer/>
+            <FooterContainer/>
+        </>
     )
 }
 
