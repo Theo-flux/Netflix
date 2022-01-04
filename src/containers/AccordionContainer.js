@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Accordion } from '../components'
 import FaqData from '../fixtures/faqs.json'
+import OptFormContainer from './OptFormContainer'
+
 
 function AccordionContainer(){
 
@@ -29,6 +31,9 @@ function AccordionContainer(){
                         {isToggled === index ? (<Accordion.Answer>{faq.body}</Accordion.Answer>) : null}
                     </Accordion.Inner>
                 ))}
+            </Accordion.Item>
+            <Accordion.Item>
+                <OptFormContainer/>
             </Accordion.Item>
         </Accordion>
     )

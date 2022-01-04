@@ -82,7 +82,9 @@ export const Item = styled.div`
 
 export const Container = styled.section`
     display: flex;
-    padding: 2em 0;
+    flex-direction: column;
+    gap: 1em;
+    padding: 4em 0;
     border-bottom: 10px solid #222;
     // border: 1px solid magenta;
 `

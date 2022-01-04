@@ -1,4 +1,3 @@
-import Navbar from '../Navbar/Navbar'
 import { Inner, Container, Title, SubTitle, Pane } from './styles/Hero'
 
 
