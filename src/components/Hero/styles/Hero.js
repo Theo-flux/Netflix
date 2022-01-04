@@ -4,7 +4,7 @@ export const Container = styled.section`
     background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%),
         ${({image}) => `url(${image})`}; 
     background-color: #cccccc;
-    height: 60vh;
+    height: 80vh;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ export const Inner = styled.div`
     // border: 1px solid magenta;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 6em;
 
     @media (min-width: 767px){
         gap: 10em; 
