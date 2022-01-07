@@ -11,7 +11,7 @@ export const Container = styled.section`
     border-bottom: 8px solid #222;
 
     @media (min-width: 767px){
-        height: 110vh; 
+        height: 100vh; 
     }
 `
 
@@ -22,7 +22,7 @@ export const Inner = styled.div`
     gap: 6em;
 
     @media (min-width: 767px){
-        gap: 10em; 
+        gap: 8em; 
     }
 `
 

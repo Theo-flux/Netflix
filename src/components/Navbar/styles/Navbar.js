@@ -41,3 +41,7 @@ export const ButtonLink = styled(Link)`
 
 `
 
+export const HomeLink = styled(Link)`
+    text-decoration: none;
+`
+

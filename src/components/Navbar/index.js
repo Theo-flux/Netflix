@@ -1,7 +1,7 @@
-import { Container, Inner, Logo, ButtonLink } from './styles/Navbar'
+import { Container, Inner, Logo, ButtonLink, HomeLink } from './styles/Navbar'
 
 
-function Navbar({ children, ...restProps}){
+function Navbar({ children }){
     return(
         <Container>{ children }</Container>
     )
@@ -15,8 +15,12 @@ Navbar.Logo = function NavbarLogo({ ...restProps }){
     return <Logo { ...restProps } />
 }
 
-Navbar.Button = function NavbarButton({ children, ...restProps }){
-    return <ButtonLink to='/'> { children }</ButtonLink>
+Navbar.Link = function NavbarLink({ to, children }){
+    return <HomeLink to={to}> { children } </HomeLink>
+}
+
+Navbar.Button = function NavbarButton({ to, children }){
+    return <ButtonLink to={to}> { children }</ButtonLink>
 }
 
 
