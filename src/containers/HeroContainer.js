@@ -5,7 +5,7 @@ import OpFormContainer from './OptFormContainer'
 
 function HeroContainer(){
     return(
-        <Hero.Container image='/images/misc/home-bg.jpg'>
+        <Hero.Container image='/images/misc/home.jpg'>
             <Hero>
                 <NavbarContainer/>
 

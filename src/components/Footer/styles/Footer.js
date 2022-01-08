@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     padding: 2em 0;
+    // border: 1px solid magenta;
+    background-color: #00000099;
+`
+export const Inner = styled.div`
     margin: auto;
     width: 80%;
     max-width: 1100px;
     color: #757575;
+    // border: 1px solid blue;
 `
 
 export const Link = styled.a`
@@ -13,8 +18,6 @@ export const Link = styled.a`
     font-size: .8rem;
     cursor: pointer;
 
-    
-    
     &:hover {
         color: white;
         text-decoration: underline;

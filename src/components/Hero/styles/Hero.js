@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%),
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0.5) 40%,rgba(0,0,0,0.5) 75%,rgba(0,0,0,.8 ) 100%),
         ${({image}) => `url(${image})`}; 
     background-color: #cccccc;
     height: 80vh;
@@ -13,6 +13,7 @@ export const Container = styled.section`
     @media (min-width: 767px){
         height: 100vh; 
     }
+    // border: 1px solid magenta;
 `
 
 export const Inner = styled.div`

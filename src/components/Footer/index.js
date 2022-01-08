@@ -1,10 +1,16 @@
-import { Container, Link, Row, Column, Text, Title  } from "./styles/Footer";
+import { Container, Inner, Link, Row, Column, Text, Title  } from "./styles/Footer";
 
 
 // Functional components
 function Footer({children, ...restProps}){
     return(
         <Container {...restProps}>{children}</Container>
+    )
+}
+
+Footer.Inner = function FooterInner({children, ...restProps}){
+    return(
+        <Inner {...restProps}>{children}</Inner>
     )
 }
 
