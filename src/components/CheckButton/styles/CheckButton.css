@@ -104,7 +104,7 @@
     border-bottom-width: 0;
     border-left-style: solid;
     border-bottom-style: solid;
-    border-color: var(--toggleArrowColor, #fff);
+    border-color: var(--toggleArrowColor, #000);
   
     position: absolute;
     top: .5428em;
@@ -121,7 +121,7 @@
     --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
     margin: auto;
     /* border: 1px solid magenta; */
-    width: .4em;
+    width: .45em;
     height: .2em;
     border-left-width: var(--uiToggleArrowWidth);
     border-bottom-width: var(--uiToggleArrowWidth);

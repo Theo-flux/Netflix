@@ -12,7 +12,7 @@ export const Inner = styled.div`
     max-width: 450px;
     margin: 0 auto;
     padding: 4em;
-    padding-bottom: 8em;
+    padding-bottom: 8em;    
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -36,12 +36,16 @@ export const Column = styled.div`
 
 export const Input = styled.input`
     width: 100%;
-    padding: .8em;
+    padding: 1em;
     border: none;
-    color: #858585;
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 1rem;
     border-radius: .2em;
     background-color: #333333;
+
+    &::placeholder {
+        color: #fff;  
+    }
 
     &:focus{
         outline: none;
@@ -53,9 +57,9 @@ export const Submit = styled.button`
     width: 100%;
     background-color: #E50914;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
-    padding: .8em;
+    padding: 1em;
     border-radius: .25em;
 `
 
