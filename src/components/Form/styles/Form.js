@@ -75,6 +75,11 @@ export const Submit = styled.button`
     border: none;
     padding: 1em;
     border-radius: .25em;
+    transition: .3s all ease-in;
+
+    &:disabled {
+        opacity: 0.5;
+    }
 `
 
 export const Row = styled.div`
@@ -120,4 +125,5 @@ export const Link = styled(ReactRouterLink)`
         color: #fff;
     }
 `
+
 
