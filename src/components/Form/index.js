@@ -1,4 +1,17 @@
-import { Container, Input, Error, Submit, Link, Title, Row, Column, MediumText, SmallText, Inner } from './styles/Form'
+import { 
+    Container, 
+    Inner,
+    Base,
+    Input, 
+    Error, 
+    Submit, 
+    Link, 
+    Title, 
+    Row, 
+    Column, 
+    MediumText, 
+    SmallText
+} from './styles/Form'
 
 function Form({ children, ...restProps }){
     return(
@@ -6,9 +19,12 @@ function Form({ children, ...restProps }){
     )
 }
 
-
 Form.Inner = function FormInner({ children, ...restProps }){
     return <Inner { ...restProps }> { children }</Inner>
+}
+
+Form.Base = function FormBase({ children, ...restProps }){
+    return <Base { ...restProps }> { children }</Base>
 }
 
 Form.Title = function FormTitle({ children, ...restProps }){
