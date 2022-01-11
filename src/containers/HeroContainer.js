@@ -1,13 +1,13 @@
 import { Hero } from '../components'
-import NavbarContainer from './NavbarContainer'
+import NavbarContainerSigninPage from './NavbarContainerSigninPage'
 import OptFormContainer from './OptFormContainer'
 import OpFormContainer from './OptFormContainer'
 
 function HeroContainer(){
     return(
-        <Hero.Container image='/images/misc/home.jpg'>
+        <Hero.Container image='/images/misc/home.jpg' borderBottom='true'>
             <Hero>
-                <NavbarContainer/>
+                <NavbarContainerSigninPage/>
 
                 <Hero.Pane>
                     <Hero.Title>Unlimited movies, TV shows, and more.</Hero.Title>

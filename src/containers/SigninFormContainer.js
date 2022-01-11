@@ -8,7 +8,7 @@ function SigninformContainer(){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const isValid = email=='' | password == ''
+    const isValid = email=== '' | password === ''
     
     function handleSubmit(event){
         event.preventDefault()

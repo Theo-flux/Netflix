@@ -9,7 +9,7 @@ function SignupformContainer(){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const isValid = email=='' | password == ''
+    const isValid = email=== '' | password === '' | name === ''
     
     function handleSubmit(event){
         event.preventDefault()
@@ -22,7 +22,7 @@ function SignupformContainer(){
 
             <Form.Inner>
 
-                <Form.Title> Sign In </Form.Title>
+                <Form.Title> Sign Up </Form.Title>
 
                 <Form.Base onSubmit={(event) => handleSubmit(event)} method='POST'>
                     <Form.Column error={error}>
@@ -56,7 +56,7 @@ function SignupformContainer(){
                     </Form.Column>
 
                     <Form.Column>
-                        <Form.MediumText>Already a member? <Form.Link to={Routers.SIGN_IN} >Sign up</Form.Link></Form.MediumText>
+                        <Form.MediumText>Already a member? <Form.Link to={Routers.SIGN_IN} >Sign in</Form.Link></Form.MediumText>
                     </Form.Column>
                 </Form.Base>
 

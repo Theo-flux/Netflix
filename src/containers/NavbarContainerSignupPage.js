@@ -8,7 +8,7 @@ function NavbarContainerSignupPage(){
                 <Navbar.Link to={Routers.HOME}>
                     <Navbar.Logo src='/images/misc/logo.svg' />
                 </Navbar.Link>
-                <Navbar.Button to={Routers.SIGN_IN}>Sign in</Navbar.Button>
+                <Navbar.Button to={Routers.SIGN_UP}>Sign up</Navbar.Button>
             </Navbar.Inner>
         </Navbar>
     )
