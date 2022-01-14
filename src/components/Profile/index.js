@@ -1,4 +1,4 @@
-import { Container, List, User, Title, Avatar, Name } from './styles/Profile'
+import { Container, List, ListContent, User, Title, Avatar, Name } from './styles/Profile'
 
 function Profile({ children, ...restProps }){
     return(
@@ -8,6 +8,10 @@ function Profile({ children, ...restProps }){
 
 Profile.List = function ProfileList( { children, ...restProps }){
     return <List { ...restProps }> { children } </List>
+}
+
+Profile.ListContent = function ProfileListContent( { children, ...restProps }){
+    return <ListContent { ...restProps }> { children } </ListContent>
 }
 
 Profile.User = function ProfileUser( { children, ...restProps }){

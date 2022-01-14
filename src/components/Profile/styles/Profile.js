@@ -8,9 +8,17 @@ export const Container = styled.section`
 
 export const List = styled.div`
     // border: 1px solid red;
-    width: 63%;
-    max-width: 400px;
+    width: 90%;
     margin:2em auto;
+
+
+`
+
+export const ListContent = styled.div`
+    // border: 1px solid yellow;
+    width: 65%;
+    max-width: 400px;
+    margin: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,7 +29,6 @@ export const List = styled.div`
         max-width: 373px;
         justify-content: flex-start;
     }
-
 `
 
 export const User = styled.div`

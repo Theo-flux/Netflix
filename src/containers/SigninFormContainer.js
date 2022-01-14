@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom'
+import { firebaseContext } from '../context/firebase'
 import {Routers} from '../constants/Routers'
+
 import { Form, Checkbutton } from "../components";
 
 function SigninformContainer(){
+
+    const navigate = useNavigate()
+    const { firebaseApp } = useContext(firebaseContext)
 
     const [error, setError] = useState('')
     const [email, setEmail] = useState('')
@@ -12,6 +18,19 @@ function SigninformContainer(){
     
     function handleSubmit(event){
         event.preventDefault()
+
+        firebaseApp.
+            auth().
+            signInWithEmailAndPassword(email, password)
+            .then(() => {
+                // push to the browse page once successful
+                navigate(Routers.BROWSE)
+            })
+            .catch((error) => {
+                setEmail('')
+                setPassword('')
+                setError(error.message)
+            })
 
     }
 
@@ -25,13 +44,14 @@ function SigninformContainer(){
 
                 <Form.Base onSubmit={(event) => handleSubmit(event)} method='POST'>
                     <Form.Column error={error}>
+                        
+                        {error ? <Form.Error> {error} </Form.Error> : null}
                         <Form.Input 
                             type='email' 
                             value={email} 
                             placeholder='Email or phone number' 
                             onChange={({target}) => setEmail(target.value)}
                         />
-                        {error ? <Form.Error> {error} </Form.Error> : null}
 
                         <Form.Input 
                             type='password'
@@ -39,7 +59,7 @@ function SigninformContainer(){
                             placeholder='Password' 
                             onChange={({ target }) => setPassword(target.value)}
                         />
-                        {error ? <Form.Error> {error} </Form.Error> : null}
+                    
                     </Form.Column>
                     
                     <Form.Column>

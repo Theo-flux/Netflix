@@ -3,19 +3,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {GlobalStyles} from './GlobalStyles'
-import { firebaseContext, firebaseContextProvider } from './context/firebase'
+import { FirebaseContextProvider } from './context/firebase'
+
 
 ReactDOM.render(
-  <firebaseContextProvider>
-  <React.StrictMode>  
+  <FirebaseContextProvider>  
     <GlobalStyles/>
     <App />
-  </React.StrictMode>
-  </firebaseContextProvider>,
+  </FirebaseContextProvider>,
+ 
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

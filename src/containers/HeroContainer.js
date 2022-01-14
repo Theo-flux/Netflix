@@ -1,7 +1,6 @@
 import { Hero } from '../components'
 import NavbarContainerSigninPage from './NavbarContainerSigninPage'
 import OptFormContainer from './OptFormContainer'
-import OpFormContainer from './OptFormContainer'
 
 function HeroContainer(){
     return(

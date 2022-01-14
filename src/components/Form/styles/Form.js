@@ -45,7 +45,7 @@ export const Column = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: ${({error}) => error ? '0em' : '.8em'};
+    gap: .8em;
 `
 
 export const Input = styled.input`
@@ -93,9 +93,12 @@ export const Row = styled.div`
 export const Error = styled.p`
     align-self: flex-start;
     margin-top: .3em;
-    color: #DD7502;
+    color: #fff;
+    padding: 1em;
+    border-radius: .25em;
     font-size: .8rem;   
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
+    background-color: #DD7502;
     // border: 1px solid magenta;
 
     &:last-of-type {

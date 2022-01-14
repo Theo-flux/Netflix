@@ -11,15 +11,17 @@ function UserProfile({ users, setProfile }){
             <Profile>
                 <Profile.Title>who's watching?</Profile.Title>
                 <Profile.List>
-                    {users.map((user) => 
-                        <Profile.User onClick={() => setProfile({
-                            userName: user.userName,
-                            photoId: user.photoId
-                        })}>
-                            <Profile.Avatar src={user.photoId}/>
-                            <Profile.Name>{user.userName}</Profile.Name>
-                        </Profile.User>
-                    )}
+                    <Profile.ListContent>
+                        {users.map((user) => 
+                            <Profile.User onClick={() => setProfile({
+                                userName: user.userName,
+                                photoId: user.photoId
+                            })}>
+                                <Profile.Avatar src={user.photoId}/>
+                                <Profile.Name>{user.userName}</Profile.Name>
+                            </Profile.User>
+                        )}
+                    </Profile.ListContent>
                 </Profile.List>
             </Profile>
         </Hero.Container>

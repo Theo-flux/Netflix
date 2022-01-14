@@ -1,10 +1,7 @@
 import React, { useState } from "react"
 
 import UserProfile from "./ProfileContainer"
-import { Hero } from '../components'
 import FooterContainer from './FooterContainer'
-import { firebaseContext } from '../context/firebase'
-import { Routers } from '../constants/Routers'
 
 function BrowseContainer(){
     const users = [
