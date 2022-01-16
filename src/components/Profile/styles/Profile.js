@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-    // border: 1px solid magenta;
+    // border: 1px solid magenta;   
     margin: 1em auto;
     
 `

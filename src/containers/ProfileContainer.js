@@ -12,8 +12,8 @@ function UserProfile({ users, setProfile }){
                 <Profile.Title>who's watching?</Profile.Title>
                 <Profile.List>
                     <Profile.ListContent>
-                        {users.map((user) => 
-                            <Profile.User onClick={() => setProfile({
+                        {users.map((user, index) => 
+                            <Profile.User key={index} onClick={() => setProfile({
                                 userName: user.userName,
                                 photoId: user.photoId
                             })}>
